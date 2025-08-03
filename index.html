@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -16,13 +19,17 @@
               "white-color": "#FFFFFF",
               "green-color": "#0B7572",
             },
+          //    fontFamily: {
+          //   exo2:["Exo 2", sans-serif],
+          // },
           },
+
           screens: {
             lg: "1440px",
             md: "768px",
             sm: "375px",
           },
-
+   
           container: {
             center: true,
 
@@ -32,11 +39,12 @@
               lg: "1240px",
             },
           },
+
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-exo2">
     <section class="container">
       <div
         class="flex flex-col gap-[80px] md:flex md:flex-col md:mt-[100px] lg:flex lg:flex-row lg:items-center lg:justify-between lg:mt-[100px]"
@@ -730,84 +738,138 @@
         </div>
       </div>
     </section>
-    <!-- <section class="max-w-[1200px] mx-auto mt-[120px]">
+    <section class="container mt-[120px]">
       <div class="flex flex-col gap-[24px]">
         <h2
-          class="font-[600] text-[48px] leading-[125%] text-[#363738] mb-[24px]"
+          class="text-[28px] md:font-[600] md:text-[44px] md:leading-[125%] md:mb-[48px] lg:font-[600] lg:text-[48px] lg:leading-[125%] text-[#363738] lg:mb-[48px]"
         >
           Этапы поставки
         </h2>
         <div
-          class="flex gap-[56px] py-[32px] pr-[100px] pl-[96px] hover:shadow-[0_4px_15px_0_#0000001F] transition-shadow duration-300 ml-[49px] rounded-[10px]"
+          class="shadow-[0_4px_15px_0_#0000001F] flex gap-[56px] py-[25px] pr-[24px] pl-[47px] md:shadow-[0_4px_15px_0_#0000001F] md:flex md:gap-[56px] md:py-[32px] md:pr-[70px] md:pl-[80px] lg:flex lg:gap-[56px] lg:py-[32px] lg:pr-[100px] lg:pl-[96px] lg:hover:shadow-[0_4px_15px_0_#0000001F] lg:transition-shadow lg:duration-300 lg:ml-[49px] lg:rounded-[10px]"
         >
-          <img src="./assets/images/img1.png" alt="" />
+          <img
+            src="./assets/images/img1.png"
+            class="hidden md:hidden lg:inline"
+            alt=""
+          />
           <div class="flex flex-col gap-[24px] items-start">
             <h5 class="font-[600] text-[20px] leading-[125%] text-[#363738]">
               Предложение от продавца
             </h5>
             <img src="./assets/images/Line 1.png" alt="" />
-            <p>
+            <p
+              class="hidden md:inline font-[400] text-[16px] leading-[150%] text-[#6B6B6C] lg:inline"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor <br />
+              eiusmod <br class="hidden md:inline lg:hidden" />
+              tempor <br class="hidden md:hidden lg:inline" />
               incididunt ut labore et dolore magna aliqua. Elit duis tristique
-              sollicitudin nibh sit <br />
-              amet. Ultrices eros in cursus turpis massa tincidunt. Venenatis
-              urna cursus eget <br />
+              <br class="hidden md:inline lg:hidden" />
+              sollicitudin nibh sit <br class="hidden md:hidden lg:inline" />
+              amet. Ultrices eros in cursus turpis massa tincidunt.
+              <br class="hidden md:inline lg:hidden" />
+              Venenatis urna cursus eget
+              <br class="hidden md:hidden lg:inline" />
               nunc scelerisque viverra mauris in.
+            </p>
+            <p
+              class="inline md:hidden lg:hidden font-[400] text-[15px] leading-[150%] text-[#6B6B6C]"
+            >
+              Lorem ipsum dolor sit amet, consectetur <br />
+              adipiscing elit, sed do eiusmod tempor <br />
+              incididunt ut labore et dolore magna <br />
+              aliqua.
             </p>
           </div>
         </div>
 
         <div
-          class="flex gap-[56px] py-[32px] pr-[100px] pl-[96px] hover:shadow-[0_4px_15px_0_#0000001F] transition-shadow duration-300 ml-[49px] rounded-[10px]"
+          class="shadow-[0_4px_15px_0_#0000001F] flex gap-[56px] py-[25px] pr-[24px] pl-[47px] md:shadow-[0_4px_15px_0_#0000001F] md:flex md:gap-[56px] md:py-[32px] md:pr-[70px] md:pl-[80px] lg:flex lg:gap-[56px] lg:py-[32px] lg:pr-[100px] lg:pl-[96px] lg:hover:shadow-[0_4px_15px_0_#0000001F] lg:transition-shadow lg:duration-300 lg:ml-[49px] lg:rounded-[10px]"
         >
-          <img src="./assets/images/img2.png" alt="" />
+          <img
+            src="./assets/images/img1.png"
+            class="hidden md:hidden lg:inline"
+            alt=""
+          />
           <div class="flex flex-col gap-[24px] items-start">
             <h5 class="font-[600] text-[20px] leading-[125%] text-[#363738]">
-              Доставка
+              Предложение от продавца
             </h5>
             <img src="./assets/images/Line 1.png" alt="" />
-            <p>
+            <p
+              class="hidden md:inline font-[400] text-[16px] leading-[150%] text-[#6B6B6C] lg:inline"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor <br />
+              eiusmod <br class="hidden md:inline lg:hidden" />
+              tempor <br class="hidden md:hidden lg:inline" />
               incididunt ut labore et dolore magna aliqua. Elit duis tristique
-              sollicitudin nibh sit <br />
-              amet. Ultrices eros in cursus turpis massa tincidunt. Venenatis
-              urna cursus eget <br />
+              <br class="hidden md:inline lg:hidden" />
+              sollicitudin nibh sit <br class="hidden md:hidden lg:inline" />
+              amet. Ultrices eros in cursus turpis massa tincidunt.
+              <br class="hidden md:inline lg:hidden" />
+              Venenatis urna cursus eget
+              <br class="hidden md:hidden lg:inline" />
               nunc scelerisque viverra mauris in.
+            </p>
+            <p
+              class="inline md:hidden lg:hidden font-[400] text-[15px] leading-[150%] text-[#6B6B6C]"
+            >
+              Lorem ipsum dolor sit amet, consectetur <br />
+              adipiscing elit, sed do eiusmod tempor <br />
+              incididunt ut labore et dolore magna <br />
+              aliqua.
             </p>
           </div>
         </div>
 
         <div
-          class="flex gap-[56px] py-[32px] pr-[100px] pl-[96px] hover:shadow-[0_4px_15px_0_#0000001F] transition-shadow duration-300 ml-[49px] rounded-[10px]"
+          class="shadow-[0_4px_15px_0_#0000001F] flex gap-[56px] py-[25px] pr-[24px] pl-[47px] md:shadow-[0_4px_15px_0_#0000001F] md:flex md:gap-[56px] md:py-[32px] md:pr-[70px] md:pl-[80px] lg:flex lg:gap-[56px] lg:py-[32px] lg:pr-[100px] lg:pl-[96px] lg:hover:shadow-[0_4px_15px_0_#0000001F] lg:transition-shadow lg:duration-300 lg:ml-[49px] lg:rounded-[10px]"
         >
-          <img src="./assets/images/img3.png" alt="" />
+          <img
+            src="./assets/images/img1.png"
+            class="hidden md:hidden lg:inline"
+            alt=""
+          />
           <div class="flex flex-col gap-[24px] items-start">
             <h5 class="font-[600] text-[20px] leading-[125%] text-[#363738]">
-              Установка у клиента
+              Предложение от продавца
             </h5>
             <img src="./assets/images/Line 1.png" alt="" />
-            <p>
+            <p
+              class="hidden md:inline font-[400] text-[16px] leading-[150%] text-[#6B6B6C] lg:inline"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor <br />
+              eiusmod <br class="hidden md:inline lg:hidden" />
+              tempor <br class="hidden md:hidden lg:inline" />
               incididunt ut labore et dolore magna aliqua. Elit duis tristique
-              sollicitudin nibh sit <br />
-              amet. Ultrices eros in cursus turpis massa tincidunt. Venenatis
-              urna cursus eget <br />
+              <br class="hidden md:inline lg:hidden" />
+              sollicitudin nibh sit <br class="hidden md:hidden lg:inline" />
+              amet. Ultrices eros in cursus turpis massa tincidunt.
+              <br class="hidden md:inline lg:hidden" />
+              Venenatis urna cursus eget
+              <br class="hidden md:hidden lg:inline" />
               nunc scelerisque viverra mauris in.
+            </p>
+            <p
+              class="inline md:hidden lg:hidden font-[400] text-[15px] leading-[150%] text-[#6B6B6C]"
+            >
+              Lorem ipsum dolor sit amet, consectetur <br />
+              adipiscing elit, sed do eiusmod tempor <br />
+              incididunt ut labore et dolore magna <br />
+              aliqua.
             </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="max-w-[1200px] mx-auto mt-[120px] mb-[130px]">
+    <section class="container mt-[120px] mb-[130px]">
       <h2
-        class="font-[600] text-[48px] leading-[125%] text-[#363738] mb-[90px]"
+        class="font-[600] text-[28px] md:text-[44px] lg:text-[48px] leading-[125%] text-[#363738] mb-[90px]"
       >
         Нам доверяют
       </h2>
-      <div class="flex flex-col gap-[90px]">
+      <div class="hidden md:hidden lg:flex lg:flex-col gap-[90px]">
         <div class="flex">
           <div
             class="flex flex-col items-center px-[60px] border-r-2 border-gray-300"
@@ -927,6 +989,763 @@
           </div>
         </div>
       </div>
-    </section>  -->
+      <div class="flex flex-col gap-[65px] md:flex md:flex-col md: lg:hidden">
+        <div class="flex flex-col gap-[65px]">
+          <div class="flex justify-between">
+            <div
+              class="flex flex-col items-center pr-[10px] md:pr-[185px] border-r-2 border-gray-300"
+            >
+              <img src="./assets/images/logo1.png" class="mb-[32px]" alt="" />
+              <div class="flex flex-col gap-[14px] items-center">
+                <h5
+                  class="font-[600] text-[20px] leading-[135%] text-[#363738]"
+                >
+                  Росатом
+                </h5>
+                <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">
+                  Корпорация атомной энергии
+                </p>
+              </div>
+            </div>
+
+            <div class="flex pl-[18px] flex-col items-center md:pl-[60px]">
+              <img src="./assets/images/logo2.png" class="mb-[56px]" alt="" />
+              <div class="flex flex-col gap-[14px] items-center">
+                <h5
+                  class="font-[600] text-[20px] leading-[135%] text-[#363738]"
+                >
+                  Газпром
+                </h5>
+                <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">
+                  Энергетическая компания
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <div class="flex flex-col items-center md:pr-[165px] pr-[70px]">
+              <img src="./assets/images/logo3.png" class="mb-[32px]" alt="" />
+              <div class="flex flex-col gap-[14px] items-center">
+                <h5
+                  class="font-[600] text-[20px] leading-[135%] text-[#363738]"
+                >
+                  Роснефть
+                </h5>
+                <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">
+                  Нефтегазовая компания
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col items-center pl-[10px] md:pl-[122px] border-l-2 border-gray-300"
+            >
+              <div class="flex flex-col gap-[7px] mb-[20px]">
+                <img src="./assets/images/logo4.png" alt="" />
+                <h5
+                  class="font-[600] text-[20px] leading-[135%] text-[#A0A4A7]"
+                >
+                  Роскосмос
+                </h5>
+              </div>
+              <div class="flex flex-col gap-[14px] items-center">
+                <h5
+                  class="font-[600] text-[20px] leading-[135%] text-[#363738]"
+                >
+                  Роскосмос
+                </h5>
+                <p class="font-[400] text-[14px] leading-[135%] text-[#6B6B6C]">
+                  Корпорация в космической отрасли
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden md:flex md:flex-col md:gap-[65px] lg:hidden">
+          <div class="flex justify-between">
+            <div
+              class="flex flex-col items-center px-[50px] pr-[150px] border-r-2 border-gray-300"
+            >
+              <img src="./assets/images/logo5.png" class="mb-[80px]" alt="" />
+              <div class="flex flex-col gap-[14px] items-center">
+                <h5
+                  class="font-[600] text-[20px] leading-[135%] text-[#363738]"
+                >
+                  Лукойл
+                </h5>
+                <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">
+                  Нефтяная компания
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center px-[50px] pr-[80px]">
+              <img src="./assets/images/logo6.png" class="mb-[32px]" alt="" />
+              <div class="flex flex-col gap-[14px] items-center">
+                <h5
+                  class="font-[600] text-[20px] leading-[135%] text-[#363738]"
+                >
+                  Интер РАО
+                </h5>
+                <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">
+                  Энергетическая компания
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <div
+              class="flex flex-col items-center justify-center border-r-2 border-gray-300 px-[35px] pr-[160px]"
+            >
+              <img src="./assets/images/logo7.png" class="mb-[32px]" alt="" />
+              <div class="flex flex-col gap-[14px] items-center">
+                <h5
+                  class="font-[600] text-[20px] leading-[135%] text-[#363738]"
+                >
+                  Ростех
+                </h5>
+                <p
+                  class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] width-full"
+                >
+                  Промышленная корпорация
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center px-[60px]">
+              <img src="./assets/images/logo8.png" class="mb-[65px]" alt="" />
+              <div class="flex flex-col gap-[14px] items-center justify-center">
+                <h5
+                  class="font-[600] text-[20px] leading-[135%] text-[#363738]"
+                >
+                  Банк ВТБ
+                </h5>
+                <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">
+                  Коммерческий банк
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="">
+        <h2
+          class=" text-[28px] mb-[32px] md:mb-[56px] lg:mb-[72px] font-[600] lg:text-[48px] md:text-[48px] leading-[125px] text-[#363738]"
+        >
+          Сотрудники компании
+        </h2>
+        <div
+          class=" hidden lg:flex lg:flex-row lg:justify-between md:flex md:flex-row md:justify-between"
+        >
+          <div class="flex flex-col gap-[24px]">
+            <div
+              class="flex gap-[32px] shadow-[0_4px_15px_0_#0000001F] rounded-[10px] lg:pr-[180px] md:pr-[100px]"
+            >
+              <div
+                class="hidden lg:inline lg:w-[51px] lg:h-[100%] md:inline md:w-[30px] md:h-[100%] lg:bg-green-color md:bg-green-color lg:rounded-l-[10px] md:rounded-l-[10px]"
+              ></div>
+              <div
+                class="lg:flex lg:gap-[40px] lg:items-center md:hidden lg:py-[35px]"
+              >
+                <div>
+                  <div>
+                    <img src="./assets/images/circle-img1.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[12px] items-start justify-start">
+                  <h5
+                    class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                  >
+                    Антон Макаров
+                  </h5>
+                  <div class="flex gap-[4px]">
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                    >
+                      Руководитель
+                    </p>
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                    >
+                      компании
+                    </p>
+                  </div>
+                  <div class="flex gap-[20px] mt-[20px]">
+                    <img src="./assets/icons/instagram.png" alt="" />
+                    <img src="./assets/icons/Vector.png" alt="" />
+                    <img src="./assets/icons/linkedin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden md:flex md:flex-col md:pl-[30px] md:gap-[12px] md:items-start md:justify-start lg:hidden md:py-[24px]"
+              >
+                <div>
+                  <img src="./assets/images/circle-img1.png" alt="" />
+                </div>
+                <h5
+                  class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                >
+                  Антон Макаров
+                </h5>
+                <div class="flex gap-[4px]">
+                  <p
+                    class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                  >
+                    Сотрудник
+                  </p>
+                  <p
+                    class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                  >
+                    отдела кадров
+                  </p>
+                </div>
+                <div class="flex gap-[20px] mt-[20px]">
+                  <img src="./assets/icons/instagram.png" alt="" />
+                  <img src="./assets/icons/Vector.png" alt="" />
+                  <img src="./assets/icons/linkedin.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-[32px] shadow-[0_4px_15px_0_#0000001F] rounded-[10px] lg:pr-[180px] md:pr-[100px]"
+            >
+              <div
+                class="hidden lg:inline lg:w-[51px] lg:h-[100%] md:inline md:w-[30px] md:h-[100%] lg:bg-green-color md:bg-green-color lg:rounded-l-[10px] md:rounded-l-[10px]"
+              ></div>
+              <div
+                class="lg:flex lg:gap-[40px] lg:items-center md:hidden lg:py-[35px]"
+              >
+                <div>
+                  <div>
+                    <img src="./assets/images/circle-img3.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[12px] items-start justify-start">
+                  <h5
+                    class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                  >
+                    Елена Валерьева
+                  </h5>
+                  <div class="flex gap-[4px]">
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                    >
+                      Главный
+                    </p>
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                    >
+                      бухгалтер
+                    </p>
+                  </div>
+                  <div class="flex gap-[20px] mt-[20px]">
+                    <img src="./assets/icons/instagram.png" alt="" />
+                    <img src="./assets/icons/Vector.png" alt="" />
+                    <img src="./assets/icons/linkedin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden md:flex md:flex-col md:pl-[30px] md:gap-[12px] md:items-start md:justify-start lg:hidden md:py-[24px]"
+              >
+                <div>
+                  <img src="./assets/images/circle-img3.png" alt="" />
+                </div>
+                <h5
+                  class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                >
+                  Иван Аркадьев
+                </h5>
+                <div class="flex gap-[4px]">
+                  <p
+                    class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                  >
+                    Сотрудник
+                  </p>
+                  <p
+                    class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                  >
+                    отдела кадров
+                  </p>
+                </div>
+                <div class="flex gap-[20px] mt-[20px]">
+                  <img src="./assets/icons/instagram.png" alt="" />
+                  <img src="./assets/icons/Vector.png" alt="" />
+                  <img src="./assets/icons/linkedin.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="lg:flex lg:gap-[32px] shadow-[0_4px_15px_0_#0000001F] rounded-[10px] lg:pr-[180px] md:hidden"
+            >
+              <div
+                class="w-[51px] h-[210px] bg-green-color rounded-l-[10px]"
+              ></div>
+              <div class="flex gap-[40px] items-center">
+                <div>
+                  <div>
+                    <img src="./assets/images/circle-img5.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[12px] items-start justify-start">
+                  <h5
+                    class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                  >
+                    Иван Аркадьев
+                  </h5>
+                  <div class="flex gap-[4px]">
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                    >
+                      Менеджер
+                    </p>
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                    >
+                      по закупкам
+                    </p>
+                  </div>
+                  <div class="flex gap-[20px] mt-[20px]">
+                    <img src="./assets/icons/instagram.png" alt="" />
+                    <img src="./assets/icons/Vector.png" alt="" />
+                    <img src="./assets/icons/linkedin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[24px]">
+            <div
+              class="flex gap-[32px] shadow-[0_4px_15px_0_#0000001F] rounded-[10px] lg:pr-[180px] md:pr-[100px]"
+            >
+              <div
+                class="hidden lg:inline lg:w-[51px] lg:h-[100%] md:inline md:w-[30px] md:h-[100%] lg:bg-green-color md:bg-green-color lg:rounded-l-[10px] md:rounded-l-[10px]"
+              ></div>
+              <div
+                class="lg:flex lg:gap-[40px] lg:items-center md:hidden lg:py-[35px]"
+              >
+                <div>
+                  <div>
+                    <img src="./assets/images/circle-img2.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[12px] items-start justify-start">
+                  <h5
+                    class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                  >
+                    Борис Вавилов
+                  </h5>
+
+                  <p
+                    class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                  >
+                    Бухгалтер
+                  </p>
+
+                  <div class="flex gap-[20px] mt-[20px]">
+                    <img src="./assets/icons/instagram.png" alt="" />
+                    <img src="./assets/icons/Vector.png" alt="" />
+                    <img src="./assets/icons/linkedin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden md:flex md:flex-col md:pl-[30px] md:gap-[12px] md:items-start md:justify-start lg:hidden md:py-[24px]"
+              >
+                <div>
+                  <img src="./assets/images/circle-img2.png" alt="" />
+                </div>
+                <h5
+                  class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                >
+                  Елена Валерьева
+                </h5>
+                <div class="flex gap-[4px]">
+                  <p
+                    class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                  >
+                    Сотрудник
+                  </p>
+                  <p
+                    class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                  >
+                    отдела кадров
+                  </p>
+                </div>
+                <div class="flex gap-[20px] mt-[20px]">
+                  <img src="./assets/icons/instagram.png" alt="" />
+                  <img src="./assets/icons/Vector.png" alt="" />
+                  <img src="./assets/icons/linkedin.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-[32px] shadow-[0_4px_15px_0_#0000001F] rounded-[10px] lg:pr-[180px] md:pr-[100px]"
+            >
+              <div
+                class="hidden lg:inline lg:w-[51px] lg:h-[100%] md:inline md:w-[30px] md:h-[100%] lg:bg-green-color md:bg-green-color lg:rounded-l-[10px] md:rounded-l-[10px]"
+              ></div>
+              <div
+                class="lg:flex lg:gap-[40px] lg:items-center md:hidden lg:py-[35px]"
+              >
+                <div>
+                  <div>
+                    <img src="./assets/images/circle-img4.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[12px] items-start justify-start">
+                  <h5
+                    class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                  >
+                    Алина Кравец
+                  </h5>
+                  <div class="flex gap-[4px]">
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                    >
+                      Сотрудник
+                    </p>
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                    >
+                      отдела кадров
+                    </p>
+                  </div>
+                  <div class="flex gap-[20px] mt-[20px]">
+                    <img src="./assets/icons/instagram.png" alt="" />
+                    <img src="./assets/icons/Vector.png" alt="" />
+                    <img src="./assets/icons/linkedin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="hidden md:flex md:flex-col md:pl-[30px] md:gap-[12px] md:items-start md:justify-start lg:hidden md:py-[24px]"
+              >
+                <div>
+                  <img src="./assets/images/circle-img4.png" alt="" />
+                </div>
+                <h5
+                  class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                >
+                  Борис Вавилов
+                </h5>
+                <div class="flex gap-[4px]">
+                  <p
+                    class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                  >
+                    Сотрудник
+                  </p>
+                  <p
+                    class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                  >
+                    отдела кадров
+                  </p>
+                </div>
+                <div class="flex gap-[20px] mt-[20px]">
+                  <img src="./assets/icons/instagram.png" alt="" />
+                  <img src="./assets/icons/Vector.png" alt="" />
+                  <img src="./assets/icons/linkedin.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="lg:flex lg:gap-[32px] shadow-[0_4px_15px_0_#0000001F] rounded-[10px] lg:pr-[180px] md:hidden"
+            >
+              <div
+                class="w-[51px] h-[210px] bg-green-color rounded-l-[10px]"
+              ></div>
+              <div class="flex gap-[40px] items-center">
+                <div>
+                  <div>
+                    <img src="./assets/images/circle-img6.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[12px] items-start justify-start">
+                  <h5
+                    class="font-[600] text-[20px] leading-[100%] text-[#363738]"
+                  >
+                    Виктор Козуб
+                  </h5>
+                  <div class="flex gap-[4px]">
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                    >
+                      Менеджер
+                    </p>
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                    >
+                      по закупкам
+                    </p>
+                  </div>
+                  <div class="flex gap-[20px] mt-[20px]">
+                    <img src="./assets/icons/instagram.png" alt="" />
+                    <img src="./assets/icons/Vector.png" alt="" />
+                    <img src="./assets/icons/linkedin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] md:hidden lg:hidden">
+          <div
+              class="flex gap-[16px] shadow-[0_4px_15px_0_#0000001F] rounded-[10px] pr-[26px]"
+            >
+              <div
+                class=" w-[20px] h-[161px] bg-green-color rounded-l-[10px] "
+              ></div>
+              <div
+                class="flex gap-[16px] items-center py-[25px]"
+              >
+                <div>
+                  <div>
+                    <img src="./assets/images/circle-img1.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[10px] items-start justify-start">
+                  <h5
+                    class="font-[600] text-[18px] leading-[100%] text-[#363738]"
+                  >
+                    Антон Макаров
+                  </h5>
+                  <div class="flex gap-[4px]">
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                    >
+                      Руководитель
+                    </p>
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                    >
+                      компании
+                    </p>
+                  </div>
+                  <div class="flex gap-[20px] mt-[20px]">
+                    <img src="./assets/icons/instagram.png" alt="" />
+                    <img src="./assets/icons/Vector.png" alt="" />
+                    <img src="./assets/icons/linkedin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+        </div>
+                  <div
+              class="flex gap-[16px] shadow-[0_4px_15px_0_#0000001F] rounded-[10px] pr-[26px]"
+            >
+              <div
+                class=" w-[20px] h-[180px]  bg-green-color rounded-l-[10px] "
+              ></div>
+              <div
+                class="flex gap-[16px] items-center py-[25px]"
+              >
+                <div>
+                  <div>
+                    <img src="./assets/images/circle-img2.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[10px] items-start justify-start">
+                  <h5
+                    class="font-[600] text-[18px] leading-[100%] text-[#363738]"
+                  >
+                    Елена Валерьева
+                  </h5>
+                  <div class="flex gap-[4px]">
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                    >
+                      Главный 
+                    </p>
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                    >
+                     бухгалтер
+                    </p>
+                  </div>
+                  <div class="flex gap-[20px] mt-[20px]">
+                    <img src="./assets/icons/instagram.png" alt="" />
+                    <img src="./assets/icons/Vector.png" alt="" />
+                    <img src="./assets/icons/linkedin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+        </div>
+                  <div
+              class="flex gap-[16px] shadow-[0_4px_15px_0_#0000001F] rounded-[10px] pr-[26px]"
+            >
+              <div
+                class=" w-[20px] h-[180px] bg-green-color rounded-l-[10px] "
+              ></div>
+              <div
+                class="flex gap-[16px] items-center py-[25px]"
+              >
+                <div>
+                  <div>
+                    <img src="./assets/images/circle-img3.png" alt="" />
+                  </div>
+                </div>
+                <div class="flex flex-col gap-[10px] items-start justify-start">
+                  <h5
+                    class="font-[600] text-[18px] leading-[100%] text-[#363738]"
+                  >
+                    Иван Аркадьев 
+                  </h5>
+                  <div class="flex gap-[4px]">
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px border-b-[3px] border-yellow-color"
+                    >
+                     Менеджер 
+                    </p>
+                    <p
+                      class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C] pb-16px"
+                    >
+                     по закупкам
+                    </p>
+                  </div>
+                  <div class="flex gap-[20px] mt-[20px]">
+                    <img src="./assets/icons/instagram.png" alt="" />
+                    <img src="./assets/icons/Vector.png" alt="" />
+                    <img src="./assets/icons/linkedin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-[130px]">
+      <h2 class=" mb-[56px] font-[600] lg:text-[48px] leading-[125%] text-[#363738] lg:mb-[94px] md:mb-[98px] md:text-[44px] text-[28px]">Наши контакты</h2>
+      <div class=" flex flex-col gap-[72px] lg:flex lg:flex-row lg:justify-between md:flex md:flex-col md:gap-[46px]">
+        <div class="flex flex-col gap-[44px] items-start">
+          <div class="flex flex-row gap-[36px] items-center">
+            <img src="./assets/icons/last-icon1.png" alt="">
+            <div class="flex flex-col gap-[8px]">
+              <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">Телефон</p>
+          <a href="tel:" class="font-[600] text-[20px] leading-[100%] text-[#363738]" >+7 8422 99 666 5</a> 
+            </div>
+          </div>
+
+                    <div class="flex flex-row gap-[36px] items-center">
+            <img src="./assets/icons/last-icon2.png" alt="">
+            <div class="flex flex-col gap-[8px]">
+              <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">E-mail</p>
+          <a href="email to:" class="font-[600] text-[20px] leading-[100%] text-[#363738]" >info@pdv.ooo</a> 
+            </div>
+          </div>
+
+                    <div class="flex flex-row gap-[36px] items-center">
+            <img src="./assets/icons/last-icon3.png" alt="">
+            <div class="flex flex-col gap-[8px]">
+              <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">Whatsapp</p>
+          <a href="tel:" class="font-[600] text-[20px] leading-[100%] text-[#363738]" >+86 158 666 95 616</a> 
+            </div>
+          </div>
+
+                    <div class="flex flex-row gap-[36px] items-center">
+            <img src="./assets/icons/last-icon4.png" alt="">
+            <div class="flex flex-col gap-[8px]">
+              <p class="font-[400] text-[14px] leading-[150%] text-[#6B6B6C]">Skype</p>
+          <a href="" class="font-[600] text-[20px] leading-[100%] text-[#363738]" >sxy-bolts.cn</a> 
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col bg-[#F9F9FB] rounded-[5px] pt-[40px] pr-[72px] pb-[56px] pl-[48px]">
+          <div class=" flex flex-col gap-[14px] lg:flex lg:flex-row lg:gap-[56px] md:flex md:flex-row md:gap-[16px] md:pb-[16px] lg:pt-[32px] lg:pb-[16px] pb-[24px] border-b-[1px] border-[#E9EAF2] ">
+            <p class="font-[400] text-[15px] md:text-[16px] lg:text-[16px] leading-[125%] text-[#6B6B6C]">Полное наименование:</p>
+            <p class="font-[600] text-[20px] lg:text-[16px] md:text-[20px] leading-[125%] text-[#363738]">ООО "Поставщик Дальнего Востока"</p>
+          </div>
+
+                   <div class=" flex flex-col gap-[14px] pt-[24px] lg:flex lg:flex-row lg:gap-[190px] md:flex md:flex-row md:gap-[16px] md:pb-[16px] lg:pt-[32px] md:pt-[32px] lg:pb-[16px] pb-[24px] border-b-[1px] border-[#E9EAF2] ">
+            <p class="font-[400] text-[15px] md:text-[16px] lg:text-[16px] leading-[125%] text-[#6B6B6C]">ИНН:</p>
+            <p class="font-[600] text-[20px] lg:text-[16px] md:text-[20px] leading-[125%] text-[#363738]">7329023100</p>
+          </div>
+
+                   <div class=" flex flex-col gap-[14px] pt-[24px] lg:flex lg:flex-row lg:gap-[196px] md:flex md:flex-row md:gap-[16px] md:pb-[16px] lg:pt-[32px] md:pt-[32px] lg:pb-[16px] pb-[24px] border-b-[1px] border-[#E9EAF2] ">
+            <p class="font-[400] text-[15px] md:text-[16px] lg:text-[16px] leading-[125%] text-[#6B6B6C]">КПП:</p>
+            <p class="font-[600] text-[20px] lg:text-[16px] md:text-[20px] leading-[125%] text-[#363738]">732901001</p>
+          </div>
+
+                   <div class=" flex flex-col gap-[14px] pt-[24px] lg:flex lg:flex-row lg:gap-[190px] md:flex md:flex-row md:gap-[16px] md:pb-[16px] lg:pt-[32px] md:pt-[32px] lg:pb-[16px] pb-[24px] border-b-[1px] border-[#E9EAF2] ">
+            <p class="font-[400] text-[15px] md:text-[16px] lg:text-[16px] leading-[125%] text-[#6B6B6C]">ОГРН:</p>
+            <p class="font-[600] text-[20px] lg:text-[16px] md:text-[20px] leading-[125%] text-[#363738]">1167325074762</p>
+          </div>
+
+                   <div class=" flex flex-col gap-[14px] pt-[24px] lg:flex lg:flex-row lg:gap-[190px] md:flex md:flex-row md:gap-[16px] md:pb-[16px] lg:pt-[32px] md:pt-[32px]  lg:pb-[16px] pb-[24px]  ">
+            <p class="font-[400] text-[15px] md:text-[16px] lg:text-[16px] leading-[125%] text-[#6B6B6C]">Адрес:</p>
+            <p class="font-[600] text-[20px] lg:text-[16px] md:text-[20px] leading-[125%] text-[#363738]">Россия, Ульяновская обл, <br class="inline hidden hidden"> территория Портовой Особой <br class="hidden md:inline lg:inline"> Экономической Зоны, проезд <br class="inline hidden hidden"> Первых Резидентов дом 3
+</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-[29px] md:mt-[82px] lg:gap-[46px]">
+
+        <div class=" h-[196px] w-full md:h-[405px] md:w-full bg-[url('/assets/images/before-footer.png')] bg-cover bg-center bg-no-repeat lg:h-[100vh] lg:w-full relative">
+                <div class=" hidden md:hidden lg:flex lg:flex-col lg:gap-[34px] lg:absolute lg:top-[190px] lg:right-[160px]">
+        <div class="flex gap-[25px]">
+          <img src="./assets/icons/white-insta.png" alt="">
+          <img src="./assets/icons/white-facebook.png" alt="">
+        </div>
+        <p class="font-[600] text-[13px]  leading-[150%] text-white-color">+38 (099)-638-45-37</p>
+        <p class="font-[600] text-[13px]  leading-[150%] text-white-color">Персональная консультация</p>
+      </div>
+        <div class=" hidden md:hidden lg:h-[60px] lg:w-[60px] rounded-[50%] bg-white-color lg:flex lg:items-center lg:justify-center absolute top-1/2 left-1/2 cursor-pointer">
+       <img src="./assets/images/play.png" alt="">
+        </div>
+        </div>
+        
+    </section>
+    <footer class=" h-[93vh] w-full md:h-[55vh] md:w-full lg:h-[55vh] lg:w-full bg-[#0B7572] mt-[25px] md:mt-[59px] lg:mt-[166px]  ">
+      <div class=" container flex flex-col gap-[80px]">
+        
+    <div class=" flex flex-col gap-[23px] lg:flex lg:flex-row lg:justify-evenly md:flex md:flex-row md:justify-evenly pt-[80px]">
+            <h1 class="font-[500] text-[20px] lg:text-[60px] md:text-[30px] leading-[150%] tracking-[16%] text-white-color">LOGO</h1>
+      <div class="flex flex-row gap-[59px] md:gap-[72px] lg:gap-[132px]">
+      <div class="flex flex-col gap-[40px] md:gap-[13px] lg:gap-[25px] text-white-color font-[500] text-[8px] lg:text-[13px] md:text-[8px] leading-[150%] tracking-[16%] ">
+        <a href="">Каталог</a>
+        <a href="">о компании</a>
+        <a href="">Индивидуальная </a>
+        <a href="">Партнерам</a>
+      </div>
+
+            <div class="flex flex-col gap-[40px] md:gap-[13px] lg:gap-[25px] text-white-color font-[500] text-[8px] lg:text-[13px] md:text-[8px] leading-[150%] tracking-[16%] ">
+        <a href="">2D, 3D модели</a>
+        <a href="">Шоу-румы</a>
+        <a href="">Дилерам </a>
+        <a href="">Контакты</a>
+         <a href="">Конфигуратор</a>
+      </div>
+      </div>
+      <div class="flex flex-col gap-[91px]">
+        <div class="flex flex gap-[14px]">
+          <img src="./assets/images/circle.png" class="w-[10px] h-[10px] md:h-[14px] md:w-[14px] lg:h-[27px] lg:w-[27px] border-[1px] border-white-color rounded-[50%]" alt="">
+          <img src="./assets/images/circle.png" class="w-[10px] h-[10px] md:h-[14px] md:w-[14px] lg:h-[27px] lg:w-[27px]  border-[1px] border-white-color rounded-[50%]" alt="">
+        </div>
+        <div>
+        <div class=" mt-[30px] py-[22px] pl-[264px] pr-[14px] flex items-center md:flex md:items-center md:gap-[150px] md:pt-[11px] md:pr-[11px] md:pb-[12px] md:pl-[24px] lg:flex lg:items-center lg:gap-[150px] lg:pt-[11px] lg:pr-[11px] lg:pb-[12px] lg:pl-[24px] bg-[#FF9619]">
+          <h5 class=" hidden md:flex lg:flex font-[600] text-[13px] leading-[150%] text-[#E9EAF2]">EMAIL</h5>
+          <img src="./assets/icons/arrow-white.png" alt="">
+        </div>
+        <div class="flex items-center justify-center">
+           <h6 class="flex mt-[16px] md:hidden lg:hidden font-[500] text-[12px] leading-[150%] tracking-[16%] text-white-color">© 1993–2021 Интернет- <br> магазин «LOGO» — truck</h6>
+           </div>
+        </div>
+
+      </div>
+    </div>
+         <div class="flex items-center  justify-center">
+     <h6 class=" hidden md:flex lg:flex font-[500] text-[12px] leading-[150%] tracking-[16%] text-white-color">© 1993–2021 Интернет-магазин «LOGO» — truck</h6> 
+  </div>
+    </div>
+    
+    </footer>
   </body>
 </html>
